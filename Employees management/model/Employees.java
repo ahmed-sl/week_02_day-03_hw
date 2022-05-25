@@ -28,7 +28,7 @@ public class Employees {
     private boolean onLeave;
 
     @NotEmpty (message = "date is required")
-    @Pattern(regexp = "\"(\\\\d{4})\"", message = "invalid date")
+    @Pattern(regexp = "(\\d{4})", message = "invalid date")
     private String employmentYear;
 
     @NotNull (message = "annualLeave is required")
